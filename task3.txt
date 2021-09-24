@@ -1,0 +1,11 @@
+start:
+MOV A, 128
+MOV [A], 1
+
+MOV A,232
+.loop1:
+INC A
+MOV [A], 1
+CMP A, 255
+JNZ .loop1:
+
